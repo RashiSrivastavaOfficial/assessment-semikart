@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="./assets/css/bs-stepper.min.css" />
+        <link rel="stylesheet" href="./style.css" />
+        <script src="assets/js/jquery-3.6.0.min.js" ></script>
+        <script src="assets/js/bootstrap.min.js" ></script>
+        <script src="assets/js/popper.min.js" ></script>
+        <script src="assets/js/bs-stepper.min.js" ></script>
+        <script src="assets/js/a076d05399.js" ></script>
+        <script src="./main.js" ></script>
+        <title>SemiKart</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-fixed-top">
+            <a class="navbar-brand" href="#">SemiKart</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Pricing</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Dropdown link
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container-fluid fixed-bg">
+            <div class="row">
+                <div class="col-lg-3 col-sm-12">
+                    <div class="card-section">
+                        <div class="card my-3">
+                            <div class="card-header">
+                                <div class="row">
+                                    <div class="col-6">
+                                        Cart Info
+                                    </div>
+                                    <div class="col-6 text-right">
+                                        <i class="fas fa-share mx-2" title="share"></i>
+                                        <span>Rename</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                
+                              <label>
+                                  <strong>Cart Name :</strong>
+                              </label>
+                              <p>Cart:2021-07-14 00:36:44</p>
+                              <label>
+                                <strong>Access Id :</strong>
+                            </label>
+                            <p>1cw9jqgec0</p>
+                            </div>
+                        </div>
+                        <div class="card mb-3">
+                        <div class="card-header">
+                            <div class="row">
+                                <div class="col-6">
+                                    Basket
+                                </div>
+                                <div class="col-6 text-right">
+                                    <i class="fas fa-download mx-2" title="Download"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <p><strong>VIEW AND MANAGE YOUR SAVED BASKETS</strong></p>
+
+                            <p>You have 1 basket(s) within your account.</p>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9 col-sm-12">
+                    <div class="mainBody">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="multi-step">
+                                    <ul class="multi-step-list">
+                                        <li class="multi-step-item active current" target="order-summary-target">
+                                            <div class="item-wrap">
+                                                <p class="item-title">
+                                                    Order Summary
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li class="multi-step-item active" target="billing-address-target">
+                                            <div class="item-wrap">
+                                                <p class="item-title">
+                                                    Billing Address
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li class="multi-step-item active" target="shipping-address-target">
+                                            <div class="item-wrap">
+                                                <p class="item-title">
+                                                    Shipping Address
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li class="multi-step-item active" target="checkout-target">
+                                            <div class="item-wrap">
+                                                <p class="item-title">
+                                                    Checkout
+                                                </p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="multistep-div">
+                                    <div class="multi-step-section" id="order-summary-target" style="">
+                                        <table class="table table-striped">
+                                            <thead>
+                                                <tr>
+                                                    <th>
+                                                        <div class="input-group">
+                                                            <div class="input-group-prepend">
+                                                              <div class="input-group-text">
+                                                                <input type="checkbox" aria-label="Checkbox for following text input">
+                                                              </div>
+                                                            </div>
+                                                        </div>
+                                                    </th>
+                                                    <th>SL No</th>
+                                                    <th>Manufacturer Part</th>
+                                                    <th>Manufacturer</th>
+                                                    <th>Supplier</th>
+                                                    <th>Price</th>
+                                                    <th>Quantity</th>
+                                                    <th>GST</th>
+                                                    <th>Sub-Total</th> 
+                                                </tr>
+                                            </thead>
+                                        </table>
+                                    </div>
+                                    <div class="multi-step-section" id="billing-address-target" style="display: none;">
+                                        <form>
+                                            <div class="form-row">
+                                              <div class="form-group col-md-6">
+                                                <label for="inputEmail4">Email</label>
+                                                <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                                              </div>
+                                              <div class="form-group col-md-6">
+                                                <label for="inputPassword4">Password</label>
+                                                <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                                              </div>
+                                            </div>
+                                            <div class="form-group">
+                                              <label for="inputAddress">Address</label>
+                                              <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                                            </div>
+                                            <div class="form-group">
+                                              <label for="inputAddress2">Address 2</label>
+                                              <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                                            </div>
+                                            <div class="form-row">
+                                              <div class="form-group col-md-6">
+                                                <label for="inputCity">City</label>
+                                                <input type="text" class="form-control" id="inputCity">
+                                              </div>
+                                              <div class="form-group col-md-4">
+                                                <label for="inputState">State</label>
+                                                <select id="inputState" class="form-control">
+                                                  <option selected>Choose...</option>
+                                                  <option>...</option>
+                                                </select>
+                                              </div>
+                                              <div class="form-group col-md-2">
+                                                <label for="inputZip">Zip</label>
+                                                <input type="text" class="form-control" id="inputZip">
+                                              </div>
+                                            </div>
+                                            <div class="form-group">
+                                              <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                                <label class="form-check-label" for="gridCheck">
+                                                  Check me out
+                                                </label>
+                                              </div>
+                                            </div>
+                                            <div class="text-center my-3">
+                                                <button type="submit" class="btn btn-primary">Save</button>
+
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="multi-step-section" id="shipping-address-target" style="display: none;">
+                                        <form>
+                                            <div class="form-row">
+                                              <div class="form-group col-md-6">
+                                                <label for="inputEmail4">Email</label>
+                                                <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                                              </div>
+                                              <div class="form-group col-md-6">
+                                                <label for="inputPassword4">Password</label>
+                                                <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                                              </div>
+                                            </div>
+                                            <div class="form-group">
+                                              <label for="inputAddress1">Address</label>
+                                              <input type="text" class="form-control" id="inputAddress1" placeholder="1234 Main St">
+                                            </div>
+                                            <div class="form-group">
+                                              <label for="inputAddress12">Address 2</label>
+                                              <input type="text" class="form-control" id="inputAddress12" placeholder="Apartment, studio, or floor">
+                                            </div>
+                                            <div class="form-row">
+                                              <div class="form-group col-md-6">
+                                                <label for="inputCity1">City</label>
+                                                <input type="text" class="form-control" id="inputCity1">
+                                              </div>
+                                              <div class="form-group col-md-4">
+                                                <label for="inputState1">State</label>
+                                                <select id="inputState1" class="form-control">
+                                                  <option selected>Choose...</option>
+                                                  <option>...</option>
+                                                </select>
+                                              </div>
+                                              <div class="form-group col-md-2">
+                                                <label for="inputZip1">Zip</label>
+                                                <input type="text" class="form-control" id="inputZip1">
+                                              </div>
+                                            </div>
+                                            <div class="form-group">
+                                              <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                                <label class="form-check-label" for="gridCheck1">
+                                                  Check me out
+                                                </label>
+                                              </div>
+                                            </div>
+                                            <div class="text-center my-3">
+                                                <button type="submit" class="btn btn-primary">Save</button>
+
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="multi-step-section" id="checkout-target" style="display: none;">
+                                        <table class="table table-striped">
+                                            <thead>
+                                                <tr>
+                                                    <th>
+                                                        <div class="input-group">
+                                                            <div class="input-group-prepend">
+                                                              <div class="input-group-text">
+                                                                <input type="checkbox" aria-label="Checkbox for following text input">
+                                                              </div>
+                                                            </div>
+                                                        </div>
+                                                    </th>
+                                                    <th>SL No</th>
+                                                    <th>Manufacturer Part</th>
+                                                    <th>Manufacturer</th>
+                                                    <th>Supplier</th>
+                                                    <th>Price</th>
+                                                    <th>Quantity</th>
+                                                    <th>GST</th>
+                                                    <th>Sub-Total</th> 
+                                                </tr>
+                                            </thead>
+                                        </table>
+                                        <div class="text-center my-3">
+                                            <button type="submit" class="btn btn-primary">Checkout</button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="row">
+                                    <div class="col-6 my-3">
+                                        <button type="button" class="btn btn-primary">Prev</button>
+                                    </div>
+                                    <div class="col-6 my-3 text-right">
+                                        <button type="button" class="btn btn-secondary">Next</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <footer class="">
+                        <div class="row">
+                            <div class="col-12 text-center bg-light py-2 ">
+                                <small><strong>&copy; copyrights reserved to SemiKart</strong></small>
+                            </div>
+                        </div>
+                        
+                    </footer>
+                </div>
+                
+            </div>
+        </div>
+        
+    </body>
+</html>
