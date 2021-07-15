@@ -255,10 +255,10 @@
   }
 }
 .multistep-div{
-    height: calc(100vh - 240px);
-    border: 1px solid #ddd;
     padding: .67rem;
     border-radius: 5px;
+    height: calc(100vh - 240px);
+    border: 1px solid #ddd;
     overflow: auto;    
     background: #ffffffad;
     margin-bottom: 1rem;
